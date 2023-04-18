@@ -1,0 +1,42 @@
+{
+  "name": "dachillo",
+  "version": "0.0.1",
+  "description": "'Dachillo' booking app api",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev:app": "npm run build && npm run start",
+    "build": "del-cli rm build && tsc",
+    "start": "node build/app.js"
+  },
+  "keywords": [
+    "booking"
+  ],
+  "author": "Maratov Mansur <mansur.maratov.m@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.5",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "del-cli": "^5.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "inversify": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.4",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/source-map-support": "^0.5.4",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.1"
+  }
+}
